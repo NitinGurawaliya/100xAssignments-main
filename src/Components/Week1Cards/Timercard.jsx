@@ -15,7 +15,7 @@ const Timercard = () => {
 
     // Simulate some delay to ensure measurable time
     let dummySum = 0;
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 100000; i++) {
       dummySum += i; // Introduce workload
     }
     console.log(`DummySum: ${dummySum}`); // Prevent optimization
