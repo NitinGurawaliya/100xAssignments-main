@@ -83,13 +83,13 @@ const Week2MediumCard = () => {
           </button>
 
           {isImageVisible && (
-            <div className="bg-gray-800 text-white p-4 mt-4 rounded-lg">
+            
               <img
                 src={anagramImage}
                 alt="Anagram Image"
                 className="w-full h-auto mt-4 mb-4"
               />
-            </div>
+    
           )}
         </div>
       )}
