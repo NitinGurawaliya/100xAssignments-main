@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import timerimage from '../../assets/timer.png';
+
 
 const Timercard = () => {
   const [sumTill, setSumTill] = useState(0);
   const [result, setResult] = useState(0);
   const [sum, setSum] = useState(0);
+  const [isImageVisible,setIsImageVisible] = useState(false)
 
   function calculateTime(sumTill) {
     const startTime = performance.now();
@@ -93,6 +96,25 @@ const Timercard = () => {
       >
         {sum}
       </div>
+
+      
+      <button type='button'
+             onClick={()=>{
+                setIsImageVisible(!isImageVisible)
+            }}
+            className='w-full text-white bg-gray-700 hover:bg-gray-500 focus:ring-4 focus:outline-none focus:ring-gray-300 font-semibold rounded-lg text-sm px-5 py-3 mt-6'
+            >
+                {!isImageVisible?"See solution":"Hide solution"}
+            </button>
+            {isImageVisible&&(
+                <div>
+                <img
+                    src={timerimage}
+                    alt="palindrome Image"
+                    className="w-full h-auto  mt-10 mb-20   "
+                />
+                </div>
+            )}
     </div>
   );
 };
