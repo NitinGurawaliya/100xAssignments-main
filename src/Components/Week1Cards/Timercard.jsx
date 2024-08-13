@@ -6,7 +6,7 @@ const Timercard = () => {
   const [sum, setSum] = useState(0);
 
   function calculateTime(sumTill) {
-    const startTime = new Date().getTime();
+    const startTime = performance.now();
     console.log(`Start time: ${startTime}`);
 
     // Use the formula to calculate sum
@@ -15,11 +15,11 @@ const Timercard = () => {
 
     // Simulate some delay to ensure measurable time
     let dummySum = 0;
-    for (let i = 0; i < 10000000; i++) {
+    for (let i = 0; i < 50000000; i++) {
       dummySum += i; // Introduce workload
     }
 
-    const endTime = new Date().getTime();
+    const endTime = performance.now();
     console.log(`End time: ${endTime}`);
 
     const timeTaken = (endTime - startTime) / 1000;
