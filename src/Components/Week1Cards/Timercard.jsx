@@ -18,6 +18,7 @@ const Timercard = () => {
     for (let i = 0; i < 1000000000; i++) {
       dummySum += i; // Introduce workload
     }
+    console.log(`DummySum: ${dummySum}`); // Prevent optimization
 
     const endTime = performance.now();
     console.log(`End time: ${endTime}`);
@@ -96,4 +97,4 @@ const Timercard = () => {
   );
 };
 
-export default Timercard; 
+export default Timercard;
