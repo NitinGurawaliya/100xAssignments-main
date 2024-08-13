@@ -1,6 +1,6 @@
 // PalindromeChecker.jsx
 import React, { useState } from 'react';
-import anagramImage from '../../assets/anagram.png';
+import palindrome from '../../assets/panindrome.png';
 
 
 const PalindromeChecker = () => {
@@ -64,8 +64,8 @@ const PalindromeChecker = () => {
             {isImageVisible&&(
                 <div>
                 <img
-                    src={anagramImage}
-                    alt="Anagram Image"
+                    src={palindrome}
+                    alt="palindrome Image"
                     className="w-full h-auto  mt-10 mb-20   "
                 />
                 </div>
