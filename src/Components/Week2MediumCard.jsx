@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import anagramImage from '../assets/anagram.png';
+import vowelImage from '../assets/vowels.png';
 import Timercard from '../Components/Week1Cards/Timercard'; // Import the Timercard component
 
 const Week2MediumCard = () => {
@@ -85,8 +85,8 @@ const Week2MediumCard = () => {
           {isImageVisible && (
             
               <img
-                src={anagramImage}
-                alt="Anagram Image"
+                src={vowelImage}
+                alt="vowel Image "
                 className="w-full h-auto mt-4 mb-4"
               />
     
