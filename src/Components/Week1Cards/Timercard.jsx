@@ -96,4 +96,4 @@ const Timercard = () => {
   );
 };
 
-export default Timercard;
+export default Timercard; 
